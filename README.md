@@ -19,10 +19,10 @@ A full-stack web application to help users track their income, expenses, and bud
 
 ## Tech Stack
 
-- **Frontend:** React, Tailwind CSS (or your choice), Chart.js
+- **Frontend:** React, Tailwind CSS, Chart.js
 - **Backend:** Node.js, Express.js, JWT authentication
-- **Database:** PostgreSQL (or MongoDB)
-- **Tools:** Sequelize ORM (or Prisma), Docker (optional)
+- **Database:** PostgreSQL 
+- **Tools:** Sequelize ORM
 
 ---
 
@@ -38,6 +38,50 @@ A full-stack web application to help users track their income, expenses, and bud
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/personal-finance-tracker.git
-   cd personal-finance-tracker
+      ```bash
+      git clone https://github.com/yourusername/personal-finance-tracker.git
+      cd personal-finance-tracker
+      ```
+
+2. Setup the backend:
+   
+      ```bash
+      cd server
+      npm install
+      ```
+   
+4. Setup environment variables
+
+   Create a .env file in the server directory with the following:
+      ```ini
+      PORT=5000
+      DB_HOST=localhost
+      DB_USER=your_db_user
+      DB_PASSWORD=your_db_password
+      DB_NAME=finance_tracker
+      JWT_SECRET=your_jwt_secret
+      ```
+5. Setup the frontend:
+  ```bash
+   cd ../client
+   npm install
+   ```
+
+6. Start the development servers
+   ```
+   # Backend
+   cd server
+   npm run dev
+   
+   # Frontend
+   cd client
+   npm start
+   ```
+
+7. Open http://localhost:3000 in your browser.
+
+
+
+
+
+   
