@@ -68,7 +68,8 @@ A full-stack web application to help users track their income, expenses, and bud
    ```
 
 6. Start the development servers
-   ```
+
+   ```bash
    # Backend
    cd server
    npm run dev
